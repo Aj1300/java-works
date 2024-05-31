@@ -28,10 +28,10 @@ public class Accounts {
 
     public void withdraw(double amount) {
         if (amount > balance) {
-            System.out.println("Insufficient balance.");
+            System.out.println("Insufficient   balance.");
         } else {
             balance -= amount;
-            System.out.println("Amount withdrawn successfully.");
+            System.out.println("Amount withdrawn   successfully.");
         }
     }
 
@@ -51,7 +51,7 @@ public class Accounts {
         Accounts account1 = new Accounts(name1, number1, initialAmount1);
 
         System.out.println(
-                "Enter account holder name, account number, address, account type, and balance for account 2:");
+                "Enter account holder name,  account number, address,  account type, and balance for account 2:");
         String name2 = scanner.nextLine();
         int number2 = scanner.nextInt();
         scanner.nextLine();
