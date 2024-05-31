@@ -16,7 +16,7 @@ class CreateTable {
             System.out.println(str2);
             st.executeUpdate(str2);
         } catch (Exception e) {
-            System.out.println("Error :" + e);
+            System.out.println("Error:" + e);
         }
     }
 }
