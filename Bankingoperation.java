@@ -8,17 +8,17 @@ class BankAccount {
     public synchronized void deposit(int amount) {
         balance += amount;
         System.out.println(
-                Thread.currentThread().getName() + " deposits " + amount + " units. Balance is now: " + balance);
+                Thread.currentThread().getName() + " deposits " + amount + "  units. Balance is now: " + balance);
     }
 
     public synchronized void withdraw(int amount) {
         if (balance >= amount) {
             balance -= amount;
             System.out.println(
-                    Thread.currentThread().getName() + " withdraws " + amount + " units. Balance is now: " + balance);
+                    Thread.currentThread().getName() + " withdraws  " + amount + " units. Balance is now: " + balance);
         } else {
             System.out.println(Thread.currentThread().getName() + " tries to withdraw " + amount
-                    + " units but insufficient funds. Balance remains: " + balance);
+                    + " units but insufficient  funds. Balance remains: " + balance);
         }
     }
 }
