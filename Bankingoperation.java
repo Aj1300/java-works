@@ -8,7 +8,7 @@ class BankAccount {
     public synchronized void deposit(int amount) {
         balance += amount;
         System.out.println(
-                Thread.currentThread().getName() + " deposits " + amount + "  units. Balance is now: " + balance);
+                Thread.currentThread().getName() + " deposits  " + amount + "  units. Balance is now: " + balance);
     }
 
     public synchronized void withdraw(int amount) {
